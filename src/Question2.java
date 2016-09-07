@@ -13,9 +13,10 @@ import java.util.Scanner;
  */
 public class Question2 {
     public static void main(String[] args) {
-        
+        //User input 
         Scanner input = new Scanner(System.in);
         
+        //array used for having 3 slots
         int[] number = new int[3];
         
         //assign numbers to arrays
@@ -25,11 +26,14 @@ public class Question2 {
             number[i] = numberz;
             
         }
+        //takes the first slot
         double product = number[0];
+        //Multiplies product with the 2 other numbers
         for (int i = 1; i < number.length; i++) {
             product = product * number[i];
            
         }
+        //prints out the results
          System.out.println("The product is " + product);
          System.out.println("The square of product " + Math.pow(product,2) );
          System.out.println("The square root of " + Math.sqrt(product));

@@ -13,16 +13,16 @@ import java.util.Scanner;
  */
 public class Question6 {
     public static void main(String[] args) {
-        // y = a ( 1.014 ) ^ x 
-        int worldPop = 6; 
-        double test = Math.pow(1.014, 35);
-        double answer = test * 6;
-       
-        System.out.println();
+        //recognize user input
+        Scanner input = new Scanner(System.in);
         
-        //2034 is the year.. so 35 years
-        System.out.println("The population will exceed 10 billion in " + answer);
+        System.out.println("Enter a number between 50 and 100 to stop at:");
+        int number = input.nextInt();
+        int loop = (100 - number)/5;
         
-        
+        for (int i = 0; i < loop+1; i++) {
+            System.out.println(100 - (i*5));
+        }
+    
     }
 }

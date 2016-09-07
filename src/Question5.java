@@ -15,13 +15,25 @@ public class Question5 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
-        System.out.println("Enter a number between 50 and 100 to stop at:");
+        System.out.println("Enter a number between 1-10 for asterisks");
         int number = input.nextInt();
-        int loop = (100 - number)/5;
         
-        for (int i = 0; i < loop+1; i++) {
-            System.out.println(100 - (i*5));
+        if(number <= 10 && number >= 1){
+            for (int i = 0; i < number; i++) {
+                if(i != 0){
+                System.out.println("");
+                }
+             for (int j = 0; j < number; j++) {
+                System.out.print("*"); 
+                 
+                }
+               if(i == number -1  ){
+                    System.out.println("");
         }
-    
-    }
+        }
+   
+    }else{
+            System.out.println("Not within the range given!");
+        }
+}
 }
