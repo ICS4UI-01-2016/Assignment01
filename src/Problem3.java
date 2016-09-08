@@ -24,37 +24,42 @@ public class Problem3 {
         //asks user for the cost of food
         System.out.println("What is the cost of food?");
         //stores the inputed cost in an integer
-        int foodCost = input.nextInt();
+        double foodCost = input.nextInt();
         
         //asks user for the cost of DJ
         System.out.println("What is the cost of the DJ?");
         //stores the inputed cost in an integer
-        int djCost = input.nextInt();
+        double djCost = input.nextInt();
         
         //asks user for the cost of hall rental
         System.out.println("What is the cost of the hall rental?");
         //stores the inputed cost in an integer
-        int hrCost = input.nextInt();
+        double hrCost = input.nextInt();
         
         //asks user for the cost of decorations
         System.out.println("What is the cost of decorations?");
         //stores the inputed cost in an integer
-        int decCost = input.nextInt();
+        double decCost = input.nextInt();
         
         ////asks user for the cost of the wait staff
         System.out.println("What is the cost of the wait staff?");
         //stores the inputed cost in an integer
-        int staffCost = input.nextInt();
+        double staffCost = input.nextInt();
         
         //asks user for the cost of misc items
         System.out.println("What is the cost of the miscellaneous expenses");
         //stores the inputed cost in an integer
-        int misCost = input.nextInt();
+        double misCost = input.nextInt();
         
-        //add all the costs together and store final sum in an int called totalCost
-        int totalCost = foodCost + djCost + hrCost + decCost + staffCost + misCost;
+        //add all the costs together and store final sum in an double called totalCost
+        double totalCost = foodCost + djCost + hrCost + decCost + staffCost + misCost;
         
+        //find the number of tickets needed to break even by dividing total cost by 35(cost of 1 ticket), save it in numTicket variable
         double numTicket = Math.ceil(totalCost/35);
+        
+        
+        //print to screen the total cost of tickets and the number of tickets required to break even
         System.out.println("The total cost will be " + totalCost +" with " + numTicket + " tickets needed to be sold to break even");
+        
     }
 }
