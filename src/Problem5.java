@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author tatad6701
  */
-public class Problem4 {
+public class Problem5 {
 
     /**
      * @param args the command line arguments
@@ -25,10 +25,12 @@ public class Problem4 {
         int num = input.nextInt();
 
         // Make a for loop to print the smae amount of asterics
-        for (int i = 0; i < num; i++) {
-            System.out.print("*");
+        for (int x = 0; x < num; x++) {
+            for (int i = 0; i < num; i++) {
+                System.out.print("*");
+            }
+            // Making the asterics be moved to a next line
+            System.out.println();
         }
-        // For asthetics (Have build successful not on the same line
-        System.out.println("  ");
     }
 }
