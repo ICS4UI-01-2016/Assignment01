@@ -31,12 +31,13 @@ public class Question8 {
 
         //a infinite loop: increases the exponent of year1 by 1 as it multiples initial
         while (true) {
-            
-            double test = Math.pow((rate + 1), year1);
-            double answer = test * initial;
+            //formula for when calculating rate using = a (rate+1)^years 
+            double yearRate = Math.pow((rate + 1), year1);
+            //answere represents the balance each year the rate is calculated 
+            double answer = yearRate * initial;
             year1++;
 
-            //ask Lamont if it has to be over or right under the double of the amount ? (840 or 799)?
+            //once it reaches double it stops counting years for when the balance is doubled 
             if (answer <= (2 * initial)) {
                 year2++;
             }

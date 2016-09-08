@@ -18,13 +18,15 @@ public class Question7 {
        //the years 
        int year = 0;
 
-        //While loop used 
+        //While loop used to loop to keep on adding years
         while(true){
-        double test = Math.pow(1.014, year);
-        double answer = test * 6;
+        //a formula used to calculate rate
+        double rate = Math.pow(1.014, year);
+        //calculates population by multiplying rate by 6 billion
+        double population = rate * 6;
 
-            //once it hits 10 billion 
-            if(answer > 10){
+            //once it hits 10 billion, it prints results
+            if(population > 10){
                 System.out.println("It takes about " + year + " years, meaning it would be " + (year+initialYear));
                 break;
                 
