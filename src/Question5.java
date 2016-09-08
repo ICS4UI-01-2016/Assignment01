@@ -31,7 +31,6 @@ public class Question5 {
                     System.out.println("");
         }
         }
-   
     }else{
             System.out.println("Not within the range given!");
         }

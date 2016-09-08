@@ -19,6 +19,7 @@ public class Question4 {
         System.out.println("Enter a number between 1-10 for asterisks");
         int number = input.nextInt();
         
+        if(number <= 10 && number >= 1){
         //a for loop used to output the amount of stars
         for (int i = 0; i < number; i++) {
             System.out.print("*");
@@ -30,6 +31,9 @@ public class Question4 {
         
         
         
-    }
+    }else{
+             System.out.println("Not within the range given!");
+        }
     
+}
 }
