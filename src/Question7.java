@@ -12,21 +12,25 @@ import java.util.Scanner;
  * @author Hadida
  */
 public class Question7 {
-    public static void main(String[] args) {    
+    public static void main(String[] args) {
+        //the initial year of when it is 6 billion 
        int initialYear = 1999;
-       int n = 0;
+       //the years 
+       int year = 0;
 
-        //While looping forever 
+        //While loop used 
         while(true){
-        double test = Math.pow(1.014, n);
+        double test = Math.pow(1.014, year);
         double answer = test * 6;
-        n++;
+
             //once it hits 10 billion 
             if(answer > 10){
-                System.out.println("It takes about " + n + " years, meaning it would be " + (n+initialYear));
+                System.out.println("It takes about " + year + " years, meaning it would be " + (year+initialYear));
                 break;
                 
             }
+            //adds an additional year
+            year++;
         }
         
     }
