@@ -25,5 +25,8 @@ public class Problem1 {
         
         // say hello to the user
         System.out.println("Hello " + name + "!");
+        
+        // close scanner
+        input.close();
     }
 }
