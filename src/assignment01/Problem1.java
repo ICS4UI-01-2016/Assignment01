@@ -18,8 +18,11 @@ public class Problem1 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
+        // ask the user for their name
         System.out.println("Please enter your Name");
+        //get the user's name
         String name = input.nextLine();
+        //display the user's name
         System.out.println("Hello "+ name);
     }
 }
