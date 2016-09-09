@@ -29,8 +29,10 @@ public class Problem6 {
         //set a count variable at 100 to begin counting down
         int count = 100;
         
+        System.out.println(count);
         //while the count - 5 is not smaller than the number input, keep looping
         while(count - 5>num){
+            
             //subtract 5 from count each time
             count = count - 5;
             //print out the count number each time
