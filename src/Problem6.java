@@ -48,6 +48,8 @@ public class Problem6 {
             // count down by 5
             count = count - 5;
         }
+        // close scanner
+        input.close();
     }
     
 }

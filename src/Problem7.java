@@ -28,5 +28,8 @@ public class Problem7 {
         }
         
         System.out.println("The population has exceeded 10 billion at: " + year);
+        
+        // close scanner
+        input.close();
     }
 }
