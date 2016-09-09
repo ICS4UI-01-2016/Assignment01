@@ -22,24 +22,34 @@ public class Problem4 {
         System.out.println("Please enter a number between 1 and 10");
         int number=input.nextInt();
         if(number==1){
+            //display 1 '*' if number is 1
             System.out.println("*");
         }else if(number==2){
+            //display 2 '*' if number is 2
             System.out.println("**");
         }else if(number==3){
+            //display 3 '*' if number is 3
             System.out.println("***");
         }else if(number==4){
+            //display 4 '*' if number is 4
             System.out.println("****");
         }else if(number==5){
+            //display 5 '*' if number is 5
             System.out.println("*****");
         }else if(number==6){
+            //display 6 '*' if number is 6
             System.out.println("******");
         }else if(number==7){
+            //display 7 '*' if number is 7
             System.out.println("*******");
         }else if(number==8){
+            //display 8 '*' if number is 8
             System.out.println("********");
         }else if(number==9){
+            //display 9 '*' if number is 9
             System.out.println("*********");
         }else if(number==10){
+            //display 10 '*' if number is 10
             System.out.println("**********");
         }
     }
