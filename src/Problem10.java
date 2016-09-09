@@ -23,19 +23,6 @@ public class Problem10 {
         String words = "";
         // Ask the user to type in any given amount of words and tp stop type "exit"
         System.out.println("Please enter as many words as you like and then type 'exit' to finish");
-        // Create aa while loop and an integer for the user's input 
-        while (true) {
-            String enteredWords = input.next();
-            if (enteredWords.equals("exit")) {
-                String[] allWords = words.split("  ");
-                System.out.println(allWords.length - 1 + " words");
-                break;
-            } else {
-                words += " " + input;
-            }
-
-        }
 
     }
-
 }

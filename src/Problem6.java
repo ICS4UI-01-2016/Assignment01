@@ -19,27 +19,25 @@ public class Problem6 {
         // Add new scanner
         Scanner input = new Scanner(System.in);
         // Ask the user to input a number 
-        System.out.println("Please insert a number between 50 and 100.");
+        System.out.print("Please insert a number between 50 and 100:");
         // Make a new integer for the user's input
         int max = 100;
         // Make an integer for the user's input
         int num = input.nextInt();
 
+
         // Subtract the users input by 5
-        while (max > num) {
-            max = max - 5;
+        while (max > num && num > 50) {
+
+            // Print out 100
             System.out.println(max);
+            // Subtract 5 from 100 until the user's input
+            max = max - 5;
+        }
 
-            // If the user's input is greater than or less than 50, break the loop
-            if (num > 101 && num < 49) {
-                System.out.println("Invalid input.");
-                break;
-            }
-
-            // Make the countdown stop before the users input
-            if (num > max) {
-                break;
-            }
+        // Inavlid input
+        if (num > 100 || num < 50) {
+            System.out.println("Invalid input!");
         }
     }
 }

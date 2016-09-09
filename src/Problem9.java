@@ -25,7 +25,7 @@ public class Problem9 {
         // Ask the user to type 10 words seperately
         System.out.println("Please enter 10 words seperately.");
 
-        // for loop to add to letter count
+        // For loop to add to letter count
         for (int x = 0; x < words.length; x++) {
             words[x] = input.next();
             wordCount += words[x].length();

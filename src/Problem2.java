@@ -19,18 +19,18 @@ public class Problem2 {
         Scanner input = new Scanner(System.in);
         // Add an array
         int[] nums = new int[3];
-
+        int product = 0;
         // For loop that goes through array 
         for (int i = 0; i < nums.length; i++) {
             // Ask the user for their three numbers
             System.out.println("Please entire a number.");
             nums[i] = input.nextInt();
+            // Answering the user 
+            product = product + nums[i];
         }
 
-        // Answering the user 
-        int product = nums[0] * nums[1] * nums[2];
-        System.out.println("Your product is " + product + ".'");
-        System.out.println("The square of your product is " + (product * product) + ".");
+        System.out.println("Your product is " + product + ".");
+        System.out.println("The square of your product is " + (Math.pow(product, product)) + ".");
         System.out.println("The square root of the product is " + (Math.sqrt(product)) + ".");
     }
 }
