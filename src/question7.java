@@ -25,12 +25,10 @@ public class question7 {
         if(start>10){
             break;
             
-        }
+           }
         //add one to the integer each time 
          i=i+1;
-        
-         
-    }
+        }
        //increase year by one each time
         int year=1999+i;
         //tell user when the population will exceed 10 billion.

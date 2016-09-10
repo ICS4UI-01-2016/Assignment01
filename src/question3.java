@@ -24,8 +24,9 @@ public class question3 {
         System.out.println("please enter the cost of food");
         //allow user to enter cost 
         cost[0] = input.nextInt();
-
+        //as user to enter cost of dj
         System.out.println("please enter the cost of the dj");
+        //allow user to enter cost
         cost[1] = input.nextInt();
         //ask user for hall rental cost 
         System.out.println("please enter the cost of the hall rental");
@@ -55,8 +56,6 @@ public class question3 {
         System.out.println(" The total cost of prom is " + "$" + total);
         //tell user how many tickets they must sell to break even
         System.out.println(" to break even you must sell " + breakeven + " tickets ");
-
-
 
     }
 }
