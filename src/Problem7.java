@@ -21,11 +21,20 @@ public class Problem7 {
          //add a scanner for input
         Scanner input = new Scanner(System.in);
         
+        //create a new variable to store the year(starting at 1999)
         int year = 1999;
         
-        while(){
-            
+        //create the new variable to store the population(starting at 6) in billions
+        double population = 6;
+        
+        //while loop to state that as long as the population does not exceed 10
+        while(population<10){
+            //increase the population by 14%(multiply by 1.014)
+            population = population * 1.014;
+            //and add +1 to the year
+            year = year + 1;
         }
-            
+        //when the while loop stops, print out the final year in which the population exceeds 10 billion
+            System.out.println("The world population will exceed 10 billion in " + year);
     }
 }
