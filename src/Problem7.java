@@ -18,12 +18,12 @@ public class Problem7 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-         //add a scanner for input
-        Scanner input = new Scanner(System.in);
+         
         
         //create a new variable to store the year(starting at 1999)
         int year = 1999;
         
+
         //create the new variable to store the population(starting at 6) in billions
         double population = 6;
         
@@ -34,7 +34,10 @@ public class Problem7 {
             //and add +1 to the year
             year = year + 1;
         }
+        
+        
         //when the while loop stops, print out the final year in which the population exceeds 10 billion
             System.out.println("The world population will exceed 10 billion in " + year);
-    }
+    
+}
 }
