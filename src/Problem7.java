@@ -16,28 +16,21 @@ public class Problem7 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        // Add a new scanner 
-        Scanner input = new Scanner(System.in);
-
-        // Make an integer for population
-        int population = 6;
-        // Make an integer for the interest rate 
+        // Make a double for the max amount of population (10 billion)
+        double maxPopulation = 10;
+        // Make a double for population (6 billion)
+        double population = 6;
+        // Make a double for the growing rate 
         double interest = 0.014;
-        // Make an integer for the number of years
-        int years = 0;
+        // Make an integer for the number of years (Starting at 1999)
+        int years = 1999;
 
-        // Make a double for the answer
-        double answer = input.nextDouble();
-
-        while (true) {
-            answer = ((population * interest) + population);
+        // For loop that counts the amount of years while doing the math, using the rate and then adding it back to the year number
+        for (double i = population; i < maxPopulation; i += (i * interest)) {
+            // Adding to the year count/number
             years++;
-            System.out.println(years);
-            if (population > 10) {
-                // Print the number of years 
-                System.out.println("The population will exceed 10 billion in " + answer);
-                break;
-            }
         }
+        // Print out the answer
+        System.out.println("The world population will exceed 10 billion in year " + years + ", counting from 1999.");
     }
 }
