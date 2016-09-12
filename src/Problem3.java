@@ -35,15 +35,14 @@ public class Problem3 {
         System.out.println("What are any Miscellaneous expenses?");
         double other = input.nextDouble();
         
-        // find the sum of the different expenses, therefore storing it in a
-        // variable of the total cost of prom and outputing it to the user
+        // calculate and output the sum of the different expenses
         double total = food + dj + hallRentals + decorations + waitStaff + other;
         System.out.println("The total cost of prom is " + total);
         
         // divide the total by the cost per ticket ($35) and rounding that up
         // because every ticket must be whole
         // finally outputting the total number of tickets to break even
-        double numberOfTickets = Math.ceil(total / 35);
+        double numberOfTickets = Math.ceil(total / 35.0);
         System.out.println("In order to break even you must sell " + numberOfTickets);
         
         // close scanner

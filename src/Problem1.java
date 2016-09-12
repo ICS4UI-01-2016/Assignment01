@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 /*
- * Create a program that asks the user what there name is and then outputs
+ * Create a program that asks the user what their name is and then outputs
  * hello and then the users name.
  */
 
@@ -19,7 +19,7 @@ public class Problem1 {
         // to get user input
         Scanner input = new Scanner(System.in);
         
-        // ask the user for input
+        // ask the user to input their name
         System.out.println("Please enter your name:");
         String name = input.nextLine();
         

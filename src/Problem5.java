@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 /*
  * Create a program that asks the user to input a number between 1-10 and then 
- * makes a box of astreaks with the dimensions as that number.
+ * makes a box of asterisks with the dimensions as that number.
  */
 
 /**
@@ -24,7 +24,7 @@ public class Problem5 {
         int number = input.nextInt();
         
         // create two new variables that represent the dimensions of the box and
-        // are equal to the number entered
+        // are equal to the number entered by the user
         int column = number;
         int row = number;
         
@@ -34,12 +34,12 @@ public class Problem5 {
         // create a loop that counts the amount of rows created making sure the
         // row variable is above 0
         // after that a new row is made and therefore decreases by 1
-        // once a new row is created the row number must be reset
+        // once a new column is created the column number must be reset to make a new column
             while(row > 0){
                 row --;
                 column = number;
-                // create a loop that adds the astricks to that row by subtracting the
-                // columns variable until it reaches 0, finishing that row of astricks
+                // create a loop that adds the asterisks to that row by subtracting the
+                // columns variable until it reaches 0, finishing that row of asterisks
                 while(column > 0){
                     System.out.print("*");
                     column --;             

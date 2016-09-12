@@ -2,8 +2,8 @@
 import java.util.Scanner;
 
 /*
- * create a program that will count down from 100 by 5 and 
- * stop before a number that a user inputed between 50-100
+ * Create a program that will count down from 100 by 5 and 
+ * stop before a number that a user inputed between 50-100.
  */
 
 /**
@@ -26,7 +26,7 @@ public class Problem6 {
         // create a variable that will represent the count down
         int count = 100;
         
-        // create a variable top represent when the count down should stop
+        // create a variable to represent when the count down should stop
         boolean countDown = true;
         
         // create a loop that will count down as long as the number is between

@@ -2,8 +2,8 @@
 import java.util.Scanner;
 
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * Create a program that will determine the year the population at 6 billion (1999) will
+ * exceed 10 billion at a increase of 1.4% each year.
  */
 
 /**
@@ -19,14 +19,23 @@ public class Problem7 {
         // to get user input
         Scanner input = new Scanner(System.in);
         
-        double count = 6;
+        // create variable to store the increasing population starting at  billion
+        double population = 6.0;
+        
+        // create a variable to store the increasing population starting at 1999
         int year = 1999;
-        while(count < 10){
-            double rate = count * 0.014;
-            count = count + rate;
+        
+        // continue looping until the populating exceeds 10 billion
+        // the rate should equal the 14% of the populating each year
+        // the population should then increase by that rate calculated
+        // finally the year should increase by 1
+        while(population < 10.0){
+            double rate = population * 0.014;
+            population = population + rate;
             year = year + 1;
         }
         
+        // print out the final year that the population will exceed 10 billion
         System.out.println("The population has exceeded 10 billion at: " + year);
         
         // close scanner
