@@ -26,11 +26,17 @@ public class Problem10 {
         // Store the amount of words being counted
         int num = 0;
 
-        // Add if statement to say if 'exit' isn't entered to stop counting
-        if (!wordsEntered.equals("exit")) {
-            num++;
-        } else {
-            break;
+
+        while (true) {
+            // Add if statement to say if 'exit' isn't entered to stop counting
+            if (!wordsEntered.equals("exit")) {
+                num++;
+            } else {
+                // Print out the answer
+                System.out.println("You've entered " + num + " words.");
+                break;
+
+            }
         }
 
     }
