@@ -1,14 +1,11 @@
 
 import java.util.Scanner;
 
-/*
- * Create a program that will count down from 100 by 5 and 
- * stop before a number that a user inputed between 50-100.
- */
-
 /**
+ * Create a program that will count down from 100 to 50 by 5 and 
+ * stop when the count down is just greater than the number input.
  *
- * @author Jon
+ * @author richj0985
  */
 public class Problem6 {
 
@@ -22,32 +19,24 @@ public class Problem6 {
         // ask the user for the number and store this number in a variable
         System.out.print("Enter a number between 50 and 100 to stop at: ");
         int number = input.nextInt();
-        
-        // create a variable that will represent the count down
-        int count = 100;
-        
-        // create a variable to represent when the count down should stop
-        boolean countDown = true;
-        
-        // create a loop that will count down as long as the number is between
-        // 50-100 and it should continue to countdown
-        while(countDown == true && number >= 50 && number <= 100){
-            // if the number is still below the count it should then print out 
-            // the countdown
-            if(count > number){
+
+	// ensure the number entered is between 50 and 100        
+        if(number >= 50 && number <= 100){
+
+	    // create a variable that will represent the count down
+            int count = 100;
+
+            // create a loop that will count down by 5 and stop 
+	    // when the count down is just greater than or equal to the number input.
+            while(count>=number){
+                // output the current count down value
                 System.out.println(count);
-            // if the number is now larger than the count it should stop
-            }else if (count < number){
-                countDown = false;
-            // if the number is now equal to the count than it should print the
-            // count and the loop should end
-            }else{
-                System.out.println(count);
-                countDown = false;
+
+	        // count down by 5
+                count = count - 5;
             }
-            // count down by 5
-            count = count - 5;
         }
+
         // close scanner
         input.close();
     }

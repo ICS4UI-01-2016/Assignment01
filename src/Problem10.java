@@ -1,12 +1,9 @@
 
 import java.util.Scanner;
 
-/*
+/**
  * Create program that will count the number of words entered by the user
  * until they enter the word "exit".
- */
-
-/**
  *
  * @author richj0985
  */
@@ -28,8 +25,12 @@ public class Problem10 {
         // create loop to continuesly ask the user for a word and count the number
         // of words until the user enters "exit" (in any case)
         while(exit == false){
+            // prompt user for a word
             System.out.println("Enter a word: ");
             String word = input.nextLine();
+
+	    // check to see if the user entered the work "exit" and
+            // if yes then we have hit the sentinel and no more words can be entered
             if(word.equalsIgnoreCase("exit")){
                 exit = true;
             } else{
@@ -38,7 +39,7 @@ public class Problem10 {
         }
         
         // output the number of words to the user
-        System.out.println("You have entered " + count + " words.");
+        System.out.println("You have entered " + count + " word(s).");
         
         // close scanner
         input.close();

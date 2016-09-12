@@ -1,13 +1,10 @@
 
 import java.util.Scanner;
 
-/*
+/**
  * Create a program that accepts the users input of three numbers.
  * Then calculates the product of three numbers.
  * Finally calculates the square and square root of that initial product.
- */
-
-/**
  *
  * @author richj0985
  */
@@ -28,7 +25,7 @@ public class Problem2 {
         for(int i = 0; i < numberList.length; i++){
             // ask for the numbers and collect input
             System.out.println("Please enter number " + (i+1) + ":");
-            numberList[i] = input.nextInt();
+            numberList[i] = input.nextDouble();
         }
         
         // calculate and output the product of the numbers

@@ -1,13 +1,10 @@
 
 import java.util.Scanner;
 
-/*
- * Create a program that asks for the different expenses of a prom night and
- * and then adds those expenses to output how many $35 tickets you must sell
- * inorder to break even.
- */
-
 /**
+ * Create a program that asks for the different expenses of a prom night and
+ * and then total those expenses to determine and output how many $35 tickets you must sell
+ * in order to break even.
  *
  * @author richj0985
  */
@@ -20,30 +17,30 @@ public class Problem3 {
         // to get user input
         Scanner input = new Scanner(System.in);
         
-        // ask the user for the different expenses and collect that data
+        // ask the user for the different prom expenses and collect that data
         // through different variables
         System.out.println("What is the expense of the Food?");
-        double food = input.nextDouble();
+        double foodCost = input.nextDouble();
         System.out.println("What is the expense of the DJ?");
-        double dj = input.nextDouble();
+        double djCost = input.nextDouble();
         System.out.println("What is the expense of the Hall Rentals?");
-        double hallRentals = input.nextDouble();
+        double hallRentalsCost = input.nextDouble();
         System.out.println("What is the expense of the Decorations?");
-        double decorations = input.nextDouble();
+        double decorationsCost = input.nextDouble();
         System.out.println("What is the expense of the Wait Staff?");
-        double waitStaff = input.nextDouble();
+        double waitStaffCost = input.nextDouble();
         System.out.println("What are any Miscellaneous expenses?");
-        double other = input.nextDouble();
+        double otherCost = input.nextDouble();
         
         // calculate and output the sum of the different expenses
-        double total = food + dj + hallRentals + decorations + waitStaff + other;
-        System.out.println("The total cost of prom is " + total);
+        double totalCost = foodCost + djCost + hallRentalsCost + decorationsCost + waitStaffCost + otherCost;
+        System.out.println("The total cost of prom is " + totalCost);
         
         // divide the total by the cost per ticket ($35) and rounding that up
         // because every ticket must be whole
         // finally outputting the total number of tickets to break even
-        double numberOfTickets = Math.ceil(total / 35.0);
-        System.out.println("In order to break even you must sell " + numberOfTickets);
+        int numberOfTickets = (int) Math.ceil( totalCost / 35.0);
+        System.out.println("In order to break even you must sell " + numberOfTickets + " ticket(s) at $35 each.");
         
         // close scanner
         input.close();

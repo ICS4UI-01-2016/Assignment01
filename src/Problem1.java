@@ -1,12 +1,9 @@
 
 import java.util.Scanner;
 
-/*
+/**
  * Create a program that asks the user what their name is and then outputs
  * hello and then the users name.
- */
-
-/**
  *
  * @author richj0985
  */

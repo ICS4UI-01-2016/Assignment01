@@ -1,14 +1,11 @@
 
 import java.util.Scanner;
 
-/*
+/**
  * Create a program that asks for a number between 1-10 and then outputs
  * the same number of asterisks in a row as the number the user entered.
- */
-
-/**
  *
- * @author Jon
+ * @author richj0985
  */
 public class Problem4 {
 
