@@ -19,12 +19,12 @@ public class Problem5 {
         // Add a new scanner 
         Scanner input = new Scanner(System.in);
         // Ask the user to enter a number between 1-10
-        System.out.println("Please enter a number bewtween 1-10");
+        System.out.println("Please enter a number between 1-10.");
 
         // Make a integer to store the amount of asterisks
         int num = input.nextInt();
 
-        // Make a for loop to print the same amount of asterisks
+        // Make a for loop to print the same amount of asterisks as the user's input
         for (int x = 0; x < num; x++) {
             for (int i = 0; i < num; i++) {
                 System.out.print("*");

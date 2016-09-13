@@ -25,14 +25,14 @@ public class Problem2 {
         for (int i = 0; i < nums.length; i++) {
             // Ask the user for their three numbers
             System.out.println("Please entire a number.");
-            // Store the user's entered numeber but within the array method using "[]"
+            // Store the user's entered number but within the array method 
             nums[i] = input.nextInt();
         }
 
         // Calculate the product 
         int product = nums[0] * nums[1] * nums[2];
         // Print to the user the answer (the product of their numbers)
-        System.out.println("Your product is " + product + ".");
+        System.out.println("The product is " + product + ".");
         // Print to the user the answer (the square of the product)
         System.out.println("The square of your product is " + (Math.pow(product, 2)) + ".");
         // Print to the user the answer (the square root of the product)

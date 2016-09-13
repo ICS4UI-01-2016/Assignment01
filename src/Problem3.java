@@ -24,7 +24,7 @@ public class Problem3 {
         // Save the user's input
         double food = input.nextDouble();
 
-        // Ask for price of Dj
+        // Ask for price of DJ
         System.out.println("What is the price of the DJ?");
         // Save the user's input
         double dj = input.nextDouble();
@@ -35,7 +35,7 @@ public class Problem3 {
         double hall = input.nextDouble();
 
         // Ask for the price of the decorations
-        System.out.println("What is the price of the decorations");
+        System.out.println("What is the price of the decorations?");
         // Save the user's input
         double decorations = input.nextDouble();
 
@@ -54,6 +54,7 @@ public class Problem3 {
         // Calculating the entire amount of tickets to sell
         double tickets = (double) (total / 35);
 
+        // Print out the total amount the party will cost and how many tickets will be needed to be sold
         System.out.println("Your party will cost you $" + Math.ceil(total) + " and you'll need to sell " + Math.ceil(tickets) + " tickets.");
     }
 }

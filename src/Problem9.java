@@ -18,9 +18,9 @@ public class Problem9 {
         // TODO code application logic here
         // Add a new scanner
         Scanner input = new Scanner(System.in);
-        // Create a string to store the words
+        // Create a string/array to store the words
         String[] words = new String[10];
-        // Made a new double and set to 0 for counting the words
+        // Make a new double and set to 0 for counting the words
         double wordCount = 0;
 
         // Ask the user to type 10 words seperately

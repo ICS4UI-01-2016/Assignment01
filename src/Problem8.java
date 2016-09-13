@@ -20,13 +20,13 @@ public class Problem8 {
         Scanner input = new Scanner(System.in);
 
         // Ask for the user to enter the initial amount
-        System.out.println("Please enter the initial amount of the bank account.");
-        // Store the user's answer
+        System.out.println("Please enter the initial amount of your bank account.");
+        // Store the user's answer within a double
         double initial = input.nextDouble();
 
         // Ask the user for their bank's interest rate
-        System.out.println("Please enter the interest rate as a decimal.");
-        // Store the user's interest rate
+        System.out.println("Please enter the interest rate of your bank as a decimal.");
+        // Store the user's bank's interest rate
         double rate = input.nextDouble();
 
         // Create an integer for the amount of years to double
@@ -44,7 +44,7 @@ public class Problem8 {
         for (double i = initial; i < 1e6; i += (i * rate)) {
             millionYears++;
         }
-        // Print out the answer
+        // Print out the answers
         System.out.println("Therefore your bank account will double in " + doublingYears + " year(s).");
         System.out.println("Therefore your bank account will reach $1 million in " + millionYears + " year(s).");
     }
