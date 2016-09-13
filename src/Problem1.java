@@ -27,6 +27,6 @@ public class Problem1 {
         String name = input.nextLine();
 
         //print and saw hello using the name
-        System.out.println("Hello " + name);
+        System.out.println("Hello " + name + "!");
     }
 }

@@ -59,7 +59,7 @@ public class Problem3 {
         
         
         //print to screen the total cost of tickets and the number of tickets required to break even
-        System.out.println("The total cost will be " + totalCost +" with " + numTicket + " tickets needed to be sold to break even");
+        System.out.println("If the ticket cost is $35, the total cost will be " + totalCost +" with " + numTicket + " tickets needed to be sold to break even");
         
     }
 }
