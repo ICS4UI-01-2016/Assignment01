@@ -27,10 +27,10 @@ public class Problem10 {
 
         //while true
         while (true) {
- 
+
             //create a string every time
             String test = in.next();
- 
+
             //if the string is "exit"
             if (test.equals("exit")) {
                 break; //break the loop
