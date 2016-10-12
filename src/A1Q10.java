@@ -20,12 +20,12 @@ public class A1Q10 {
         Scanner input = new Scanner(System.in);
         int q = 0;
         int s = 1;
-        String[] words = new String[s];
+        String words = "";
         while(true){
             System.out.println("Please enter word #" + (q + 1));
-            words[q] = input.nextLine();
-            if(words[q] == "exit"){
-                System.out.println("You typed " + q + " words.");
+            words = input.nextLine();
+            if(words.equals("exit")){
+                System.out.println("You typed " + (q + 1) + " words.");
                 break;  
             }
             q = q + 1;
