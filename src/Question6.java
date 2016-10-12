@@ -22,11 +22,16 @@ public class Question6 {
         //Takes the number user inputs and minuses it from 100 then divides it by 5 to get amount for loop
         int loop = (100 - number)/5;
         
+        //if number is within the range 
+        if(number >= 50 && number <= 100){
         //For loop used to count down until it hits the number (or close to) user inputs
         for (int i = 0; i < loop+1; i++) {
             //prints out the numbers
             System.out.println(100 - (i*5));
         }
-    
+        //tells user to enter a valid value
+        }else{
+            System.out.println("Please enter a valid number");
+        }
     }
 }

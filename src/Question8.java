@@ -27,7 +27,6 @@ public class Question8 {
         //year1 is for when it reaches million, year2 is for when initial amount doubles
         double year1 = 0;
         double year2 = 0;
-      
 
         //a infinite loop: increases the exponent of year1 by 1 as it multiples initial
         while (true) {
@@ -44,7 +43,7 @@ public class Question8 {
 
             //Once it reaches just around 1 million (Doesn't always work out) and is done processing, it prints out results
             if (answer >= 1000000) {
-                System.out.println("In about " + (year1-1) + " years your savings will reach 1 million and it takes " + year2);
+                System.out.println("In about " + (year1 - 1) + " years your savings will reach 1 million and it takes " + year2 + " years to double");
                 break;
             }
 
