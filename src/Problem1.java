@@ -25,6 +25,7 @@ public class Problem1 {
         // store the name
         String name = input.nextLine();
         
+        // say hello
         System.out.println("Hello " + name + "!");
         
         

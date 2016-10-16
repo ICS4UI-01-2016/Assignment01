@@ -17,17 +17,12 @@ public class Problem7 {
         int year = 1999;
         int n = 1;
         double p = 6e9;
-        double r = 0.014;
-        double a = 0;
         
-        // calculate when the population reaches 10 billion (formula: a = p(1+r)^n;)
-        while(a < 1e10){
-            a = p * Math.pow((1+r),n);
-            n = n++;
+        // calculate when the population reaches 10 billion
+        while(p < 1e10){
+            p = p * Math.pow((1 + 0.014),n);
+            year++;
         }
-        
-        // add n to the year
-        year = year + n;
         
         // tell the user when the population will exceed 10 billion people
         System.out.println("The population will exceed 10 billion in " + year);
