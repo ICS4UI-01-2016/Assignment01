@@ -20,11 +20,11 @@ public class Q4 {
         
         Scanner input = new Scanner (System.in);
         
-        //
+        //Enter amount of words
         
         System.out.println("Please enter a number between 1 and 10 ");
         int ask = input.nextInt();
-        
+        //if it = 1, output 1 and so on
         if (ask == 1){
             System.out.println("*");
         }
