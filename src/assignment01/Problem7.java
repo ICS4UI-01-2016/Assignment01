@@ -20,6 +20,7 @@ public class Problem7 {
         double popmax=10;
         double pop=6;
         int popYear=1999;
+        
         while(pop < popmax){
              pop=pop*1.014;
              popYear=popYear+1;
