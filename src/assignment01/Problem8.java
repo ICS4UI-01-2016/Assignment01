@@ -21,17 +21,19 @@ public class Problem8 {
         double intial2=1000;
         int year1=1;
         int year2=1;
-        while(intial1<intial1*2){
-            intial1=(1+interest1)*intial1;
+        double newAmount1=intial1;
+        double newAmount2=intial2;
+        while(newAmount1<intial1*2){
+            newAmount1=(1+interest1)*newAmount1;
             year1=year1+1;
-            if(intial1==intial1*2){
+            if(newAmount1==intial1*2){
                 break;
             }
         }
-        while(intial2<1000000){
-            intial2=(1+interest2)*intial2;
+        while(newAmount2<1000000){
+            newAmount2=(1+interest2)*newAmount2;
             year2=year2+1;
-            if(intial2==1000000){
+            if(newAmount2==1000000){
                 break;
             }
         }
