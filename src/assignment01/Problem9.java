@@ -17,16 +17,19 @@ public class Problem9 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
-        String word=input.nextLine();
-        for(int i = 0; i < 9; i++)
-        {
-            String[] wordList = null;
-            System.out.println(word.length());
-            wordList[i]=word;
-            if(i==9){
+        String[] wordList = new String[10];
+        int wordTotal=0;
+        for(int i = 0; i < 10; i++){
+            wordList[i]=input.nextLine();
+            System.out.println(wordList[i].length());
+            wordTotal=wordTotal+wordList[i].length();
+            System.out.println(wordTotal);
+            if(i==10){
+                break;
                 
             }
         }
-        
+        int wordAverage=wordTotal/10;
+        System.out.println(wordAverage);
     }
 }
